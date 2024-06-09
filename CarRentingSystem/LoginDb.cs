@@ -74,5 +74,12 @@ namespace CarRentingSystem
         {
 
         }
+
+        private void cusButton1_Click(object sender, EventArgs e)
+        {
+            SignUp signup = new SignUp();
+            signup.Show();
+            this.Hide();
+        }
     }
 }
