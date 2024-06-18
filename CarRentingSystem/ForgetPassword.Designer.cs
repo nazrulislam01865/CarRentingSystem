@@ -28,36 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Email = new CarRentingSystem.CustomTextBox();
-            this.userName = new CarRentingSystem.CustomTextBox();
-            this.ForgetBtn = new CustomControls.RJControls.CusButton();
-            this.NewPassword = new CarRentingSystem.CustomTextBox();
+            this.showPass = new System.Windows.Forms.CheckBox();
             this.ConfirmPassbtn = new CarRentingSystem.CustomTextBox();
+            this.NewPassword = new CarRentingSystem.CustomTextBox();
+            this.ForgetBtn = new CustomControls.RJControls.CusButton();
+            this.userName = new CarRentingSystem.CustomTextBox();
+            this.Email = new CarRentingSystem.CustomTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // Email
+            // showPass
             // 
-            this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.Email.customMultiline = false;
-            this.Email.customText = "Email";
-            this.Email.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.Location = new System.Drawing.Point(142, 204);
-            this.Email.Name = "Email";
-            this.Email.password = false;
-            this.Email.Size = new System.Drawing.Size(168, 43);
-            this.Email.TabIndex = 0;
+            this.showPass.AutoSize = true;
+            this.showPass.BackColor = System.Drawing.Color.Transparent;
+            this.showPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showPass.Image = global::CarRentingSystem.Properties.Resources.openEyeS;
+            this.showPass.Location = new System.Drawing.Point(312, 219);
+            this.showPass.Name = "showPass";
+            this.showPass.Size = new System.Drawing.Size(26, 11);
+            this.showPass.TabIndex = 5;
+            this.showPass.UseVisualStyleBackColor = false;
+            this.showPass.Visible = false;
+            this.showPass.CheckedChanged += new System.EventHandler(this.showPass_CheckedChanged);
             // 
-            // userName
+            // ConfirmPassbtn
             // 
-            this.userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.userName.customMultiline = false;
-            this.userName.customText = "Username";
-            this.userName.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.Location = new System.Drawing.Point(142, 256);
-            this.userName.Name = "userName";
-            this.userName.password = false;
-            this.userName.Size = new System.Drawing.Size(168, 43);
-            this.userName.TabIndex = 1;
+            this.ConfirmPassbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
+            this.ConfirmPassbtn.customMultiline = false;
+            this.ConfirmPassbtn.customText = "Confirm Password";
+            this.ConfirmPassbtn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmPassbtn.Location = new System.Drawing.Point(142, 256);
+            this.ConfirmPassbtn.Name = "ConfirmPassbtn";
+            this.ConfirmPassbtn.password = true;
+            this.ConfirmPassbtn.Size = new System.Drawing.Size(168, 43);
+            this.ConfirmPassbtn.TabIndex = 4;
+            this.ConfirmPassbtn.Visible = false;
+            // 
+            // NewPassword
+            // 
+            this.NewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
+            this.NewPassword.customMultiline = false;
+            this.NewPassword.customText = "New Password";
+            this.NewPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword.Location = new System.Drawing.Point(142, 204);
+            this.NewPassword.Name = "NewPassword";
+            this.NewPassword.password = true;
+            this.NewPassword.Size = new System.Drawing.Size(168, 43);
+            this.NewPassword.TabIndex = 3;
+            this.NewPassword.Visible = false;
             // 
             // ForgetBtn
             // 
@@ -80,31 +101,47 @@
             this.ForgetBtn.UseVisualStyleBackColor = false;
             this.ForgetBtn.Click += new System.EventHandler(this.ForgetBtn_Click);
             // 
-            // NewPassword
+            // userName
             // 
-            this.NewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.NewPassword.customMultiline = false;
-            this.NewPassword.customText = "New Password";
-            this.NewPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewPassword.Location = new System.Drawing.Point(142, 204);
-            this.NewPassword.Name = "NewPassword";
-            this.NewPassword.password = true;
-            this.NewPassword.Size = new System.Drawing.Size(168, 43);
-            this.NewPassword.TabIndex = 3;
-            this.NewPassword.Visible = false;
+            this.userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
+            this.userName.customMultiline = false;
+            this.userName.customText = "Username";
+            this.userName.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.Location = new System.Drawing.Point(142, 256);
+            this.userName.Name = "userName";
+            this.userName.password = false;
+            this.userName.Size = new System.Drawing.Size(168, 43);
+            this.userName.TabIndex = 1;
             // 
-            // ConfirmPassbtn
+            // Email
             // 
-            this.ConfirmPassbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
-            this.ConfirmPassbtn.customMultiline = false;
-            this.ConfirmPassbtn.customText = "Confirm Password";
-            this.ConfirmPassbtn.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPassbtn.Location = new System.Drawing.Point(142, 256);
-            this.ConfirmPassbtn.Name = "ConfirmPassbtn";
-            this.ConfirmPassbtn.password = true;
-            this.ConfirmPassbtn.Size = new System.Drawing.Size(168, 43);
-            this.ConfirmPassbtn.TabIndex = 4;
-            this.ConfirmPassbtn.Visible = false;
+            this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
+            this.Email.customMultiline = false;
+            this.Email.customText = "Email";
+            this.Email.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.Location = new System.Drawing.Point(142, 204);
+            this.Email.Name = "Email";
+            this.Email.password = false;
+            this.Email.Size = new System.Drawing.Size(168, 43);
+            this.Email.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(142, 241);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(168, 1);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Location = new System.Drawing.Point(142, 293);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(168, 1);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // ForgetPassword
             // 
@@ -112,6 +149,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CarRentingSystem.Properties.Resources.ForgetPass;
             this.ClientSize = new System.Drawing.Size(450, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.showPass);
             this.Controls.Add(this.ConfirmPassbtn);
             this.Controls.Add(this.NewPassword);
             this.Controls.Add(this.ForgetBtn);
@@ -121,7 +161,10 @@
             this.Name = "ForgetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetPassword";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,5 +175,8 @@
         private CustomControls.RJControls.CusButton ForgetBtn;
         private CustomTextBox NewPassword;
         private CustomTextBox ConfirmPassbtn;
+        private System.Windows.Forms.CheckBox showPass;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

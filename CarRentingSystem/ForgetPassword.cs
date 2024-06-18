@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CarRentingSystem
 {
@@ -21,8 +22,17 @@ namespace CarRentingSystem
         {
            Email.Visible = false;
            userName.Visible = false;
+           showPass.Visible = true;
            NewPassword.Visible = true;
-            ConfirmPassbtn.Visible = true;
+           ConfirmPassbtn.Visible = true;
+           ForgetBtn.Visible = false;
         }
+
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            NewPassword.TogglePasswordVisibility(showPass.Checked);
+         
+        }
+
     }
 }
