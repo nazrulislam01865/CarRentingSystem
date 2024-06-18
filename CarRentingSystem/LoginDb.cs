@@ -81,5 +81,12 @@ namespace CarRentingSystem
             signup.Show();
             this.Hide();
         }
+
+        private void ForgetPass_Click(object sender, EventArgs e)
+        {
+            ForgetPassword forgetPassword = new ForgetPassword();
+            forgetPassword.Show();
+            this.Hide();
+        }
     }
 }

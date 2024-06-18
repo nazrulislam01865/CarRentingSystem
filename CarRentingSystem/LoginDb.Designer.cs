@@ -32,22 +32,22 @@
             this.LoginText = new System.Windows.Forms.Panel();
             this.ShowPassWord = new System.Windows.Forms.CheckBox();
             this.ForgetPass = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.cusButton1 = new CustomControls.RJControls.CusButton();
             this.label1 = new System.Windows.Forms.Label();
             this.loginBtn = new CustomControls.RJControls.CusButton();
             this.userPass = new CarRentingSystem.CustomTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userName = new CarRentingSystem.CustomTextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             MemberLoginLabel = new System.Windows.Forms.Label();
             this.LoginText.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MemberLoginLabel
@@ -109,6 +109,25 @@
             this.ForgetPass.TabIndex = 12;
             this.ForgetPass.Text = "Forget Password?";
             this.ForgetPass.UseVisualStyleBackColor = false;
+            this.ForgetPass.Click += new System.EventHandler(this.ForgetPass_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::CarRentingSystem.Properties.Resources.line;
+            this.pictureBox3.Location = new System.Drawing.Point(34, 178);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(178, 1);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::CarRentingSystem.Properties.Resources.line;
+            this.pictureBox4.Location = new System.Drawing.Point(34, 232);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(178, 1);
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
             // cusButton1
             // 
@@ -174,6 +193,16 @@
             this.userPass.Size = new System.Drawing.Size(209, 40);
             this.userPass.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CarRentingSystem.Properties.Resources.key_11263140;
+            this.pictureBox1.Location = new System.Drawing.Point(100, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // userName
             // 
             this.userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(201)))), ((int)(((byte)(255)))));
@@ -211,34 +240,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::CarRentingSystem.Properties.Resources.line;
-            this.pictureBox3.Location = new System.Drawing.Point(34, 178);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(178, 1);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::CarRentingSystem.Properties.Resources.line;
-            this.pictureBox4.Location = new System.Drawing.Point(34, 232);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(178, 1);
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarRentingSystem.Properties.Resources.key_11263140;
-            this.pictureBox1.Location = new System.Drawing.Point(100, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // LoginDb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,10 +257,10 @@
             this.Load += new System.EventHandler(this.LoginDb_Load);
             this.LoginText.ResumeLayout(false);
             this.LoginText.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
