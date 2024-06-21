@@ -93,6 +93,16 @@ namespace CarRentingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AdminHome {
+            get {
+                object obj = ResourceManager.GetObject("AdminHome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ForgetPass {
             get {
                 object obj = ResourceManager.GetObject("ForgetPass", resourceCulture);
@@ -143,6 +153,16 @@ namespace CarRentingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap load {
+            get {
+                object obj = ResourceManager.GetObject("load", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -166,6 +186,16 @@ namespace CarRentingSystem.Properties {
         internal static System.Drawing.Bitmap logo2 {
             get {
                 object obj = ResourceManager.GetObject("logo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap na_feb_34 {
+            get {
+                object obj = ResourceManager.GetObject("na_feb_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +246,16 @@ namespace CarRentingSystem.Properties {
         internal static System.Drawing.Bitmap signup2 {
             get {
                 object obj = ResourceManager.GetObject("signup2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap signup3 {
+            get {
+                object obj = ResourceManager.GetObject("signup3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

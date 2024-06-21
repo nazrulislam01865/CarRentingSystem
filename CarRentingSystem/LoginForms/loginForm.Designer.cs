@@ -31,20 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.hidePanel = new System.Windows.Forms.Panel();
             this.progressPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CrossBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CrossBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // hidePanel
             // 
             this.hidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.hidePanel.Controls.Add(this.progressPanel);
+            this.hidePanel.Controls.Add(this.label2);
             this.hidePanel.Location = new System.Drawing.Point(0, 278);
             this.hidePanel.Name = "hidePanel";
             this.hidePanel.Size = new System.Drawing.Size(600, 22);
@@ -60,26 +58,13 @@
             this.progressPanel.TabIndex = 1;
             this.progressPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Sans Serif Collection", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(242)))));
-            this.label1.Location = new System.Drawing.Point(126, 155);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 52);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Car Rental Service";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Sans Serif Collection", 5.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(242)))));
-            this.label2.Location = new System.Drawing.Point(-2, 257);
+            this.label2.Location = new System.Drawing.Point(224, 1);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 20);
             this.label2.TabIndex = 3;
@@ -103,27 +88,14 @@
             this.CrossBtn.TabStop = false;
             this.CrossBtn.Click += new System.EventHandler(this.CrossBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::CarRentingSystem.Properties.Resources.user_1077012;
-            this.pictureBox1.Location = new System.Drawing.Point(241, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::CarRentingSystem.Properties.Resources.load;
             this.ClientSize = new System.Drawing.Size(600, 300);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CrossBtn);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.hidePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
@@ -131,10 +103,9 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.hidePanel.ResumeLayout(false);
+            this.hidePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CrossBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -142,10 +113,8 @@
 
         private System.Windows.Forms.Panel hidePanel;
         private System.Windows.Forms.Panel progressPanel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox CrossBtn;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -26,6 +26,7 @@ namespace CarRentingSystem
            NewPassword.Visible = true;
            ConfirmPassbtn.Visible = true;
            ForgetBtn.Visible = false;
+           ConfirmBtn.Visible = true;
         }
 
         private void showPass_CheckedChanged(object sender, EventArgs e)
@@ -34,5 +35,11 @@ namespace CarRentingSystem
          
         }
 
+        private void ConfirmBtn_Click(object sender, EventArgs e)
+        {
+            LoginDb loginDb = new LoginDb();
+            loginDb.Show();
+            this.Close();
+        }
     }
 }

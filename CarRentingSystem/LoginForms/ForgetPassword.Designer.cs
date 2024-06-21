@@ -36,6 +36,7 @@
             this.Email = new CarRentingSystem.CustomTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ConfirmBtn = new CustomControls.RJControls.CusButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -143,12 +144,35 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // ConfirmBtn
+            // 
+            this.ConfirmBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(116)))), ((int)(((byte)(192)))));
+            this.ConfirmBtn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(116)))), ((int)(((byte)(192)))));
+            this.ConfirmBtn.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.ConfirmBtn.BorderRadius = 8;
+            this.ConfirmBtn.BorderSize = 0;
+            this.ConfirmBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ConfirmBtn.FlatAppearance.BorderSize = 0;
+            this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfirmBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmBtn.ForeColor = System.Drawing.Color.Black;
+            this.ConfirmBtn.Location = new System.Drawing.Point(174, 307);
+            this.ConfirmBtn.Name = "ConfirmBtn";
+            this.ConfirmBtn.Size = new System.Drawing.Size(105, 27);
+            this.ConfirmBtn.TabIndex = 8;
+            this.ConfirmBtn.Text = "Confirm";
+            this.ConfirmBtn.TextColor = System.Drawing.Color.Black;
+            this.ConfirmBtn.UseVisualStyleBackColor = false;
+            this.ConfirmBtn.Visible = false;
+            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
+            // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CarRentingSystem.Properties.Resources.ForgetPass;
             this.ClientSize = new System.Drawing.Size(450, 450);
+            this.Controls.Add(this.ConfirmBtn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.showPass);
@@ -178,5 +202,6 @@
         private System.Windows.Forms.CheckBox showPass;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private CustomControls.RJControls.CusButton ConfirmBtn;
     }
 }
