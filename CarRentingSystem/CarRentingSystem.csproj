@@ -64,6 +64,12 @@
     <Compile Include="LoginForms\ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForms\LoginDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForms\LoginDashBoard.Designer.cs">
+      <DependentUpon>LoginDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForms\LoginDb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForms\ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForms\LoginDashBoard.resx">
+      <DependentUpon>LoginDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForms\LoginDb.resx">
       <DependentUpon>LoginDb.cs</DependentUpon>
@@ -188,6 +197,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
